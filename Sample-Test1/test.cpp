@@ -6,6 +6,11 @@ TEST(TestCaseName, Testz) {
   EXPECT_TRUE(true);
 }
 
+TEST(TestCaseName, TestGetGop) {
+	Cal cal;
+	EXPECT_EQ(30, cal.getGop(5, 6));
+}
+
 TEST(TestCaseName, TestSumSum) {
 	Cal cal = Cal();
 
