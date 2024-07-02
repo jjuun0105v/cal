@@ -11,4 +11,10 @@ TEST(Cal, Minus) {
 	int ret = cal.getMinus(4, 3);
 	EXPECT_EQ(ret, 1);
 	EXPECT_TRUE(true);
+
+TEST(TestCaseName, TestGetSum) {
+	Cal* c = new Cal();
+
+	EXPECT_EQ(c->getSum(1, 2), 3);
+
 }
