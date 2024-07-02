@@ -6,6 +6,12 @@ TEST(TestCaseName, Testz) {
   EXPECT_TRUE(true);
 }
 
+TEST(TestCaseName, getDivide) {
+	Cal cal;
+	EXPECT_EQ(cal.getDivide(2, 2), 1);
+	EXPECT_EQ(cal.getDivide(1, 2), 0.5);
+}
+
 TEST(TestCaseName, TestGetGop) {
 	Cal cal;
 	EXPECT_EQ(30, cal.getGop(5, 6));
