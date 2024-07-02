@@ -1,9 +1,9 @@
 #include "pch.h"
 #include "../Project6/Cal.cpp"
 
-TEST(TestCaseName, TestName) {
-  EXPECT_EQ(1, 1);
-  EXPECT_TRUE(true);
+TEST(TestCaseName, TestGetGop) {
+	Cal cal;
+	EXPECT_EQ(30, cal.getGop(5, 6));
 }
 
 TEST(TestCaseName, TestZegop) {
@@ -18,7 +18,8 @@ TEST(Cal, Minus) {
 	int ret = cal.getMinus(4, 3);
 	EXPECT_EQ(ret, 1);
 	EXPECT_TRUE(true);
-
+}
+  
 TEST(TestCaseName, TestGetSum) {
 	Cal* c = new Cal();
 
