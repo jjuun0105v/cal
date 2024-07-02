@@ -1,6 +1,17 @@
 #include "pch.h"
 #include "../Project6/Cal.cpp"
 
+TEST(TestCaseName, TestName) {
+  EXPECT_EQ(1, 1);
+  EXPECT_TRUE(true);
+}
+
+TEST(TestCaseName, getDivide) {
+	Cal cal;
+	EXPECT_EQ(cal.getDivide(2, 2), 1);
+	EXPECT_EQ(cal.getDivide(1, 2), 0.5);
+}
+
 TEST(TestCaseName, TestGetGop) {
 	Cal cal;
 	EXPECT_EQ(30, cal.getGop(5, 6));
@@ -12,7 +23,8 @@ TEST(TestCaseName, TestZegop) {
 	EXPECT_EQ(cal.getZegop(-1), 1);
 	EXPECT_EQ(cal.getZegop(4), 16);
 	EXPECT_EQ(cal.getZegop(cal.getZegop(3)), 81);
-  
+}
+
 TEST(Cal, Minus) {
 	Cal cal;
 	int ret = cal.getMinus(4, 3);
