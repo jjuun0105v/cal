@@ -1,7 +1,8 @@
 #include "pch.h"
 #include "../Project6/Cal.cpp"
 
-TEST(TestCaseName, TestName) {
-  EXPECT_EQ(1, 1);
-  EXPECT_TRUE(true);
+TEST(TestCaseName, GopTest) {
+	Cal cal;
+
+	EXPECT_EQ(30, cal.getGop(5, 6));
 }
