@@ -5,3 +5,10 @@ TEST(TestCaseName, TestName) {
   EXPECT_EQ(1, 1);
   EXPECT_TRUE(true);
 }
+
+TEST(Cal, Minus) {
+	Cal cal;
+	int ret = cal.getMinus(4, 3);
+	EXPECT_EQ(ret, 1);
+	EXPECT_TRUE(true);
+}
